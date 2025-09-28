@@ -43,7 +43,10 @@ class _DDay extends StatelessWidget {
   // 하트 눌렀을 때 실행할 함수
   final GestureTapCallback onHeartPressed;
   
-  
+  _DDay({
+    required this.onHeartPressed, // 상위에서 함수 입력받기
+  });
+
   @override
   Widget build(BuildContext context) {
     // 테마 불러오기
