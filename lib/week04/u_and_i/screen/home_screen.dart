@@ -49,7 +49,12 @@ class _HomeScreenState extends State<HomeScreen> {
             height: 300,  // 높이 300 지정
             child: CupertinoDatePicker(
               mode: CupertinoDatePickerMode.date,
-              onDateTimeChanged: (DateTime data) {},
+              // 날짜가 변경되면 실행되는 함수
+              onDateTimeChanged: (DateTime data) {
+                setState(() {
+                  firstDay = data;
+                });
+              },
             ),
           ),
         );
