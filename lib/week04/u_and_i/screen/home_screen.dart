@@ -30,16 +30,18 @@ class _DDay extends StatelessWidget {
   Widget build(BuildContext context) {
     // 테마 불러오기
     final textTheme = Theme.of(context).textTheme;
-    
+
     return Column(
       children: [
         const SizedBox(height: 16.0),
         Text( // 최상단 U&I 글자
           'U&I',
+          style: textTheme.headlineLarge, // headline1 스타일 적용
         ),
         const SizedBox(height: 16.0),
         Text( // 두 번째 글자
           '우리 처름 만난 날',
+          style: textTheme.bodyLarge,  // bodyText1 스타일 적용
         ),
         Text( // 임시로 지정한 만난 날짜
           '2021.11.23',
