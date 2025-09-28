@@ -12,6 +12,8 @@ class HomeScreen extends StatefulWidget {
 
 // _HomeScreenState 정의
 class _HomeScreenState extends State<HomeScreen> {
+  // PageController 생성
+  final PageController pageController = PageController();
 
   // initState() 함수 등록
   @override
