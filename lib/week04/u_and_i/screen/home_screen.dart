@@ -45,9 +45,11 @@ class _HomeScreenState extends State<HomeScreen> {
         // 날짜 선택하는 다이얼로그
         return CupertinoDatePicker(
           // 시간 제외하고 날짜만 선택하기
-        )
-      }
-    )
+          mode: CupertinoDatePickerMode.date,
+          onDateTimeChanged: (DateTime data) {},
+        );
+      },
+    );
   }
 }
 
