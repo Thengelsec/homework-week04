@@ -31,8 +31,13 @@ class _HomeScreenState extends State<HomeScreen> {
         if (nextPage == 4) {    // 첫 페이지와 마지막 페이지 분기 처리
           nextPage = 0;          
         } else {
-          nextPage = 0;
+          nextPage++;
         }
+        pageController.animateToPage( // 페이지 변경
+          nextPage,
+          duration: Duration(milliseconds: 500),
+          curve: Curves.ease,
+        );
       },
     );
   }
