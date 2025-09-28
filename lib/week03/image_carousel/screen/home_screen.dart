@@ -8,6 +8,9 @@ class HomeScreen extends StatefulWidget {
   @override
   State<HomeScreen> createState() => _HomeScreen State();
 }
+
+// _HomeScreenState 정의
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     // 상태바 색상 변경
