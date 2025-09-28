@@ -13,9 +13,9 @@ class HomeScreen extends StatelessWidget {
         (number) => Image.asset(
           'asset/img/image_$number.jpeg',
           fit: BoxFit.cover,  // Boxfit.cover 설정
-          ),
-            )
-            .toList(),
+        ),
+        )
+        .toList(),
       ),
     );
   }
