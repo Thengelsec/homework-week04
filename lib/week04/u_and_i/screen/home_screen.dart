@@ -39,12 +39,15 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void onHeartPressed(){  // 하트 눌렀을 때 실행할 함수
-    // 상태 변경 시 setState() 함수 실행
-    setState(() {
-
-      // firstDay 변수에서 하루 빼기
-      firstDay = firstDay.subtract(Duration(days: 1));
-    });
+    showCupertinoDialog(  // 쿠퍼티노 다이얼로그 실행
+      context: context,   // 보여줄 다이얼로그 빌드
+      builder: (BuildContext context) {
+        // 날짜 선택하는 다이얼로그
+        return CupertinoDatePicker(
+          // 시간 제외하고 날짜만 선택하기
+        )
+      }
+    )
   }
 }
 
