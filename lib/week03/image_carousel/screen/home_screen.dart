@@ -6,7 +6,7 @@ class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreen> createState() => _HomeScreen State();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
 // _HomeScreenState 정의
