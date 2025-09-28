@@ -69,7 +69,8 @@ class _DDay extends StatelessWidget {
           style: textTheme.bodyLarge,  // bodyText1 스타일 적용
         ),
         Text( // 임시로 지정한 만난 날짜
-          '2021.11.23',
+          // DateTime을 년.월.일 형태로 변경
+          '${firstDay.year}.${firstDay.month}.${firstDay.day}',
           style: textTheme.bodyMedium,  // bodyText2 스타일 적용
         ),
         const SizedBox(height: 16.0),
