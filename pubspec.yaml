@@ -80,8 +80,10 @@ flutter:
 
     - family: sunflower
       fonts:
-        - asset: fonts/TrajanPro.ttf
-        - asset: fonts/TrajanPro_Bold.ttf
+        - asset: asset/font/Sunflower-Light.ttf
+        - asset: asset/font/Sunflower-Medium.ttf
+          weight: 500 # 폰트 두께. FontWeight 클래스의 값과 같습니다.
+        - asset: asset/font/Sunflower-Bold.ttf
           weight: 700
   #
   # For details regarding fonts from package dependencies,
