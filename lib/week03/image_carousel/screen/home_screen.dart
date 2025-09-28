@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'dart:async';  // async 패키지 불러오기
 
 // StatefulWidget 정의
 class HomeScreen extends StatefulWidget {
