@@ -6,6 +6,9 @@ class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
+  State<HomeScreen> createState() => _HomeScreen State();
+}
+  @override
   Widget build(BuildContext context) {
     // 상태바 색상 변경
     // 상태바가 이미 흰색이면 light 대신 dart를 주어 검정으로 바꾸세요
