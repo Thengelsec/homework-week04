@@ -51,10 +51,10 @@ class _HomeScreenState extends State<HomeScreen> {
               mode: CupertinoDatePickerMode.date,
               onDateTimeChanged: (DateTime data) {},
             ),
-          );
-        ),
-        barrierDismissible: true, // 외부 탭할 경우 다이얼로그 닫기
+          ),
+        );
       },
+      barrierDismissible: true, // 외부 탭할 경우 다이얼로그 닫기
     );
   }
 }
