@@ -33,9 +33,8 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-    void onHeartPressed(){  // 하트 눌렀을 때 실행할 함수
-      print('클릭');
-    }
+  void onHeartPressed(){  // 하트 눌렀을 때 실행할 함수
+    print('클릭');
   }
 }
 
