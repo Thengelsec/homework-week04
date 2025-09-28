@@ -45,6 +45,7 @@ class _DDay extends StatelessWidget {
         ),
         Text( // 임시로 지정한 만난 날짜
           '2021.11.23',
+          style: textTheme.bodyMedium,  // bodyText2 스타일 적용
         ),
         const SizedBox(height: 16.0),
         IconButton(   // 하트 아이콘 버튼
@@ -52,11 +53,14 @@ class _DDay extends StatelessWidget {
           onPressed: () {},
           icon: Icon(
             Icons.favorite,
+            color: Colors.red,  // 색상 빨강으로 변경
           ),
         ),
         const SizedBox(height: 16.0),
         Text( // 만난 후 DDay
           'D+365',
+          // headline2 스타일 적용
+          style: textTheme.headlineMedium,
         ),
       ],
     );
