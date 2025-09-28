@@ -42,12 +42,17 @@ class _HomeScreenState extends State<HomeScreen> {
     showCupertinoDialog(  // 쿠퍼티노 다이얼로그 실행
       context: context,   // 보여줄 다이얼로그 빌드
       builder: (BuildContext context) {
-        // 날짜 선택하는 다이얼로그
-        return CupertinoDatePicker(
-          // 시간 제외하고 날짜만 선택하기
-          mode: CupertinoDatePickerMode.date,
-          onDateTimeChanged: (DateTime data) {},
-        );
+        return Align( // 정렬을 지정하는 위젯
+          alignment: Alignment.bottomCenter,  // 아래 중간으로 정렬
+          child: Container(
+            color: Colors.white,  // 배경색 흰색 지정
+            height: 300,  // 높이 300 지정
+            child: CupertinoDatePicker(
+              mode: CupertinoDatePickerMode.date,
+              onDateTimeChanged: (DateTime data) {},
+            ),
+          )
+        )
       },
     );
   }
