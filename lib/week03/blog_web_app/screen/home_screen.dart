@@ -23,7 +23,9 @@ class HomeScreen extends StatelessWidget {
         // 가운데 정렬
         centerTitle: true,
       ),
-      body: Text('Home Screen'),
+      body: WebViewWidget(  // 웹뷰 위젯 추가하기 (에러 잠시 무시하기)
+        controller: webViewController,  // 에러 발생
+      ),
     );
   }
 }
