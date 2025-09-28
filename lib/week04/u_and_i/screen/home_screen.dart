@@ -4,6 +4,9 @@ class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
+  State<Home
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.pink[100],  // 핑크 배경색 적용
