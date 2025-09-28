@@ -8,8 +8,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // 상태바 색상 변경
     // 상태바가 이미 흰색이면 light 대신 dart를 주어 검정으로 바꾸세요
-    SystemChrome.setSystemUIOverlayStyle(SystemUIOverlayStyle.light);
-    
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+
     return Scaffold(
       body: PageView( // PageView 추가
         // map() 함수는 1.4.1 map()을 참조해주세요.
